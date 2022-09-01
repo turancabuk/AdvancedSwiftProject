@@ -46,10 +46,25 @@ copyOfStructTuran.age = 53
 
 //Function vs Mutating Function//
 
-print(classTuran.age)
-classTuran.happyBirthday()
-print(classTuran.age)
+//print(classTuran.age)
+//classTuran.happyBirthday()
+//print(classTuran.age)
 
-print(structTuran.age)
-structTuran.happyBirthday()
-print(structTuran.age)
+//print(structTuran.age)
+//structTuran.happyBirthday()
+//print(structTuran.age)
+
+
+//let tuple = (1,5,7)
+//print(tuple.0)
+
+//var tuple2 = (5,"sebastian",[100,200,300])
+//print(tuple2.2[1])
+
+//let predifinedTuple : (String , String)
+
+//predifinedTuple.0 = "sebastian"
+//predifinedTuple.1 = "Vettel"
+
+//print(predifinedTuple)
+
