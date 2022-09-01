@@ -7,10 +7,41 @@
 
 import Foundation
 
-let turanClass = musicianClass(nameInput: "turan", ageInput: 32, instrumentInput: "klarinet")
+let classTuran = musicianClass(nameInput: "turan", ageInput: 32, instrumentInput: "klarinet")
 
-print(turanClass.instrument)
+print(classTuran.instrument)
 
-let turanStruct = musicianStruct(name: "turan", age: 32, instrument: "klarinet")
+var structTuran = musicianStruct(name: "turan", age: 32, instrument: "klarinet")
 
-print(turanStruct.instrument)
+print(structTuran.instrument)
+
+
+classTuran.age = 52
+print(classTuran.age)
+
+
+structTuran.age = 52
+print(structTuran.age)
+//Cannot assign to property: 'structTuran' is a 'let' constant
+
+var copyOfClassTuran = classTuran
+var copyOfStructTuran = structTuran
+
+copyOfClassTuran.age = 53
+copyOfStructTuran.age = 53
+
+print(copyOfClassTuran.age)
+print(copyOfStructTuran.age)
+
+print(classTuran.age)
+print(structTuran.age)
+
+
+//ReferenceTypes -> Class
+//Copy -> Same object new reference -> 1 object +2 references
+
+
+//ValueTypes -> Struct
+//Copy ->New object -> 2 objects
+
+
