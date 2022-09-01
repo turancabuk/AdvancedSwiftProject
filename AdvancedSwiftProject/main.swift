@@ -16,19 +16,19 @@ var structTuran = musicianStruct(name: "turan", age: 32, instrument: "klarinet")
 //print(structTuran.instrument)
 
 
-classTuran.age = 52
+//classTuran.age = 52
 //print(classTuran.age)
 
 
-structTuran.age = 52
+//structTuran.age = 52
 //print(structTuran.age)
 //Cannot assign to property: 'structTuran' is a 'let' constant
 
-var copyOfClassTuran = classTuran
-var copyOfStructTuran = structTuran
+//var copyOfClassTuran = classTuran
+//var copyOfStructTuran = structTuran
 
-copyOfClassTuran.age = 53
-copyOfStructTuran.age = 53
+//copyOfClassTuran.age = 53
+//copyOfStructTuran.age = 53
 
 //print(copyOfClassTuran.age)
 //print(copyOfStructTuran.age)
@@ -44,7 +44,7 @@ copyOfStructTuran.age = 53
 //ValueTypes -> Struct
 //Copy ->New object -> 2 objects
 
-//Function vs Mutating Function//
+            //Function vs Mutating Function//
 
 //print(classTuran.age)
 //classTuran.happyBirthday()
@@ -54,7 +54,7 @@ copyOfStructTuran.age = 53
 //structTuran.happyBirthday()
 //print(structTuran.age)
 
-
+                // TUPLE
 //let tuple = (1,5,7)
 //print(tuple.0)
 
@@ -67,4 +67,26 @@ copyOfStructTuran.age = 53
 //predifinedTuple.1 = "Vettel"
 
 //print(predifinedTuple)
+
+            //Guard Let && If Let
+
+let myNumer = "5"
+
+func convertToIntIf(stringInput : String) -> Int{
+    if let myInteger = Int(stringInput){
+        return myInteger
+    }else{
+        return 0
+    }
+}
+
+func convertToIntGuard (stringInput: String) -> Int{
+    guard let myInteger = Int(stringInput) else{
+        return 0
+    }
+    return myInteger
+}
+
+print(convertToIntIf(stringInput: myNumer))
+print(convertToIntGuard(stringInput: myNumer))
 
