@@ -9,19 +9,19 @@ import Foundation
 
 let classTuran = musicianClass(nameInput: "turan", ageInput: 32, instrumentInput: "klarinet")
 
-print(classTuran.instrument)
+//print(classTuran.instrument)
 
 var structTuran = musicianStruct(name: "turan", age: 32, instrument: "klarinet")
 
-print(structTuran.instrument)
+//print(structTuran.instrument)
 
 
 classTuran.age = 52
-print(classTuran.age)
+//print(classTuran.age)
 
 
 structTuran.age = 52
-print(structTuran.age)
+//print(structTuran.age)
 //Cannot assign to property: 'structTuran' is a 'let' constant
 
 var copyOfClassTuran = classTuran
@@ -30,11 +30,11 @@ var copyOfStructTuran = structTuran
 copyOfClassTuran.age = 53
 copyOfStructTuran.age = 53
 
-print(copyOfClassTuran.age)
-print(copyOfStructTuran.age)
+//print(copyOfClassTuran.age)
+//print(copyOfStructTuran.age)
 
-print(classTuran.age)
-print(structTuran.age)
+//print(classTuran.age)
+//print(structTuran.age)
 
 
 //ReferenceTypes -> Class
@@ -44,4 +44,12 @@ print(structTuran.age)
 //ValueTypes -> Struct
 //Copy ->New object -> 2 objects
 
+//Function vs Mutating Function//
 
+print(classTuran.age)
+classTuran.happyBirthday()
+print(classTuran.age)
+
+print(structTuran.age)
+structTuran.happyBirthday()
+print(structTuran.age)
