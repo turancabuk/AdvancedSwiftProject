@@ -44,7 +44,7 @@ var structTuran = musicianStruct(name: "turan", age: 32, instrument: "klarinet")
 //ValueTypes -> Struct
 //Copy ->New object -> 2 objects
 
-            //Function vs Mutating Function//
+                                    //Function vs Mutating Function//
 
 //print(classTuran.age)
 //classTuran.happyBirthday()
@@ -68,9 +68,9 @@ var structTuran = musicianStruct(name: "turan", age: 32, instrument: "klarinet")
 
 //print(predifinedTuple)
 
-            //Guard Let && If Let
+                                            //Guard Let && If Let
 
-let myNumer = "5"
+/*let myNumer = "5"
 
 func convertToIntIf(stringInput : String) -> Int{
     if let myInteger = Int(stringInput){
@@ -88,5 +88,44 @@ func convertToIntGuard (stringInput: String) -> Int{
 }
 
 print(convertToIntIf(stringInput: myNumer))
-print(convertToIntGuard(stringInput: myNumer))
+print(convertToIntGuard(stringInput: myNumer)) */
+
+
+/// SWITCH CASE & REMAINDER
+
+//REMAINDER
+
+/*let myNumber = 11
+
+let myRemainder = myNumber % 4
+
+if myRemainder == 1{
+    print("its 1")
+}else if myRemainder == 2{
+    print("its 2")
+}else if myRemainder == 3{
+    print("its 3")
+}else if myRemainder == 4{
+    print("its 4")
+}
+
+
+// SWITCH CASE
+
+switch myRemainder {
+case 1:
+    print("its 1")
+case 2:
+    print("its 2")
+case 3:
+    print("its 3")
+default:
+    print("its 4")
+}
+*/
+
+
+
+
+
 
